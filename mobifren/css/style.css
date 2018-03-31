@@ -1,0 +1,108 @@
+body{
+  margin-top: 70px;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Poppins;
+}
+
+p{
+  font-family: Roboto;
+}
+
+.navbar-default{
+  background: #fff;
+  border: 0;
+  font-family: Poppins;
+  border-bottom: 7px solid #ef3f2e;
+}
+
+.navbar-brand{
+  font-size: 20px;
+  color: #000 !important;
+  font-weight: bold;
+}
+.navbar-brand span{color: #ef3f2e;}
+.showcase-left{text-align: center;}
+#showcase h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#showcase img{
+  width: 90%;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+#showcase .showcase-right{
+  margin-top: 90px;
+}
+.showcase-btn{text-align: center; width: 100%;}
+
+/* tesimonial */
+#testimonial{
+  background: #f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+#testimonial p{
+  font-size: 27px;
+  font-family: Josefin Sans;
+  color: #000;
+}
+#testimonial p.customer{
+  font-size: 20px;
+  color: #666;
+}
+
+/* banner */
+#banner .container {
+  width: 100%;
+  padding: 0;
+  padding-top: 30px;
+}
+#banner .container img{
+  width: 100%;
+}
+/* info */
+#info1 .info-left{
+  text-align: center;
+}
+#info1 .info-right{
+  margin-top: 90px;
+}
+#info1 .info-right a{text-align: center; width: 100%;}
+
+/* info2 */
+#info2{
+  margin: 20px 0 60px 0;
+}
+
+/* contact */
+#contact{
+  background: url(../img/mfimg3.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #fff;
+  border-top: 7px solid #ef3f2e;
+  border-bottom: 7px solid #ef3f2e;
+}
+/* #contact .container img{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+} */
+form{width: 345px;}
+
+/* footer */
+footer{
+  padding: 30px;
+}
+
+/* 고쳐야할것들
+  contaact img opacity - full
+  모바일 버젼에서 showcase img 수정
+ */

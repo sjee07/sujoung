@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행텐 | HANG TEN</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- <nav>
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+    </nav> -->
+
+    <div class="pimg1" id="intro">
+      <div class="video-wrap">
+        <video src="hangten.mp4" autoplay="true" loop="true"></video>
+      </div>
+      <div class="ptext"></div>
+    </div>
+
+    <nav>
+      <ul>
+        <li class="active"><a href="#intro">INTRO</a></li>
+        <li><a href="#brand">BRAND</a></li>
+        <li><a href="#membership">MEMBERSHIP</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+    <section class="section section-light" id="brand">
+      <h2>Brand identity & History</h2>
+      <p>
+        1960년 여름, South California 해안의 Duke Boyd라는 젊은 Surfer가 Doris Boeck라는 Seamstress에게 자신이 디자인한 영구적인 Surfer용 Trunk를 만들어 보도록 권유했습니다.<br>
+        그 Trunk는 Malibu 해변으로부터 La Jolla 해변에 이르기까지 삽시간에 유행으로 번졌습니다.<br>
+
+        Duke는 Surfing Board의 머리끝 부분에 10개의 발가락을 잡고 Surfing하는 것이 최산의 Surfing묘기라고 알려주었으며 이에 아이디어를 얻은 그날 밤
+        Sufing Trunk에 두개의 발바닥을 수 높았습니다.<br>
+
+        두개의 발바닥은 그들의 로고가 되었고, Surfing의 최상기술인 ‘HANGING TEN’에서 ‘HANG TEN’이라는 브랜드 네임이 탄생되었습니다.<br>
+        전 세계가 일반적으로 알고 있는 HANG TEN은 이렇게 출발하였고, 오늘날 전세계 74개국에서 찾아볼 수 있게 되었습니다.
+      </p>
+    </section>
+
+    <div class="pimg2" id="membership">
+      <div class="ptext">
+        <span class="border trans">
+          HANG TEN Membership
+        </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>행텐 멤버십 혜택</h2>
+      <p>
+        1. 구매 금액의 2% 적립 (VIP 3%)<br>
+        2. 회원 가입시, 1,000포인트 적립<br>
+        3. 생일 보너스 할인 쿠폰 발송<br>
+        4. VIP 승급 시, 10,000원 할인 쿠폰 지급<br>
+        5. 마케팅 프로모션 정보 발송 및 회원을 위한 행사 진행<br>
+      </p>
+    </section>
+
+    <div class="pimg3" id="contact">
+      <div class="ptext">
+        <span class="border trans">
+          Contact us
+        </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>브랜디드스타일코리아(주)</h2><hr>
+      <p>서울시 금천구 가산동 60-73 벽산디지털밸리 5차 5층</p>
+      <p>대표전화 02-2109-3200</p>
+      <p>고객상담실 080-775-1114</p>
+      <p>blskorpr@brandedlifestyle.com</p>
+    </section>
+
+    <div class="pimg4">
+      <div class="ptext">
+        <span class="border">
+          HANG TEN STYLE
+        </span>
+      </div>
+    </div>
+
+
+<!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+  $(window).scroll(function(){
+    var intro=$('#intro').offset().top;
+    var brand=$('#brand').offset().top;
+    var membership=$('#membership').offset().top;
+    var contact=$('#contact').offset().top;
+    var windowTop=$(window).scrollTop();
+
+    var index;
+    if(windowTop>=intro && windowTop<brand){
+      index=0;
+    }else if(windowTop>=brand && windowTop<membership){
+      index=1;
+    }else if(windowTop>=membership && windowTop<contact){
+      index=2;
+    }else if(windowTop>=contact){
+      index=3;
+    }
+    $('nav li').removeClass('active');
+    $('nav li').eq(index).addClass('active');
+
+    if(windowTop>=(brand-100)){
+      $('nav').addClass('fixed');
+    }else{
+      $('nav').removeClass('fixed');
+    }
+
+    // if(windowTop)
+    })
+  </script>
+
+  </body>
+</html>
